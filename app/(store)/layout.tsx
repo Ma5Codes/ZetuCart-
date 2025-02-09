@@ -3,7 +3,7 @@ import "../globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import Headers from "../../components/Header";
-;
+import { SanityLive } from "@/sanity/lib/live";
 
 
 export const metadata: Metadata = {
@@ -24,6 +24,8 @@ export default function RootLayout({
         <Headers />
         {children} 
         </main>
+        
+        <SanityLive />
         </body>
     </html>
     </ClerkProvider>

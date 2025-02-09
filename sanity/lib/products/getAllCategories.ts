@@ -1,8 +1,8 @@
 import { defineQuery } from "next-sanity";
 import { sanityFetch } from "@/sanity/lib/live";
 
-export const getCategories = async () => { 
-  const ALL_PRODUCT_QUERY = defineQuery
+export const getAllCategories = async () => { 
+  const ALL_CATEGORY_QUERY = defineQuery
   (`*[_type == "category"]
     | order(name asc )
   `);
